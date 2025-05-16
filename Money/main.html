@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="main.html" ><img src="images/KaCoins.svg" alt="KaCoins" class="Logo"></a>
+        <div class="menu">
+            <a href="Html-pages/money_catalog.html">Каталог монет</a>
+            <a href="#states">Статьи</a>
+            <a href="#FQA">О нас</a>
+        </div>
+        
+        <div class="burger-menu">
+            <div class="burger-icon"></div>
+        </div>
+        
+        <div class="mobile-menu">
+            <a href="Html-pages/money_catalog.html">Каталог монет</a>
+            <a href="#states">Статьи</a>
+            <a href="#FQA">О нас</a>
+        </div>
+        
+    </header>
+    <main>
+        <section class="main_start">
+            <img src="images/background.jpg" alt="background">
+            <h1>Поиск, оценка, покупка и продажа монет</h1>
+        </section>
+        <section class="possibilities">
+            <p class="poss_p">Наши возможности</p>
+            <div class="poss_menu">
+                <div><img src="images/Sale_icon.svg" alt="Sale_icon"><figcaption>Продажа монет</figcaption><p>Возможность купить интересные и красивые монеты</p></div>
+                <div><img src="images/Buy_icon.svg" alt="Buy_icon"><figcaption>Покупка монет</figcaption><p>Возможность продать свои монеты нам</p></div>
+                <div><img src="images/Views_icon.svg" alt="Sale_icon"><figcaption>Просмотр монет</figcaption><p>Один из крупнейших архивов аукционных монет</p></div>
+                <div><img src="images/Steps_icon.svg" alt="Buy_icon"><figcaption>Удобный функционал</figcaption><p>Один из самых современных и удобных</p></div>
+            </div>
+        </section>
+        <section class="coins">
+            <p class="coin_p">Популярные монеты</p>
+            <div class="coin_menu"> 
+                <div><a href="Html-pages/money_info_main1.html"><img src="images/coin1.jpg" alt="coin1"></a><figcaption>10 рублей Николая II 1899 г</figcaption><p>Цена 10 000 BYN</p></div>
+                <div><a href="Html-pages/money_info_main2.html"><img src="images/coin2.jpg" alt="coin2"></a><figcaption>5 рублей Николая II 1898-1900 гг</figcaption><p>Цена 5 000 BYN</p></div>
+                <div><a href="Html-pages/money_info_main3.html"><img src="images/coin3.jpg" alt="coin3"></a><figcaption>15 рублей Николая ІІ 1897 г</figcaption><p>Цена 5 000 BYN</p></div>
+                <div><a href="Html-pages/money_info_main4.html"><img src="images/coin4.jpg" alt="coin4"></a><figcaption>7,5 рублей Николая ІІ 1897 г</figcaption><p>Цена 5 000 BYN</p></div>
+                <div><a href="Html-pages/money_info_main1.html"><img src="images/м4.jpg" alt="coin1"></a><figcaption>Монета 5 копеек 1900 СПБ ФЗ</figcaption><p>Цена 75 BYN</p></div>
+                <div><a href="Html-pages/money_info_main2.html"><img src="images/м6.jpg" alt="coin2"></a><figcaption>Монета 50 копеек 1900 ФЗ</figcaption><p>Цена 87 BYN</p></div>
+                <div><a href="Html-pages/money_info_main3.html"><img src="images/м10.jpg" alt="coin3"></a><figcaption>Монета 25 копеек 1880 СПБ НФ</figcaption><p>Цена 115 BYN</p></div>
+                <div><a href="Html-pages/money_info_main4.html"><img src="images/м12.jpg" alt="coin4"></a><figcaption>Монета 3 копейки 1880 СПБ</figcaption><p>Цена 48 BYN</p></div>
+            </div>
+        </section>
+        <section class="states" id = "states">
+            <p class="states_p">Статьи о монетах</p>
+            <div class="states_menu">
+                <a href="Html-pages/money_history.html">Криптосимволика в металле</a>
+                <a href="Html-pages/money_history2.html">Золотая монета к 25-летию доллара Сакагавеи</a>
+                <a href="Html-pages/money_history3.html">Памятная монета Беларуси</a>
+                <a href="Html-pages/money_history.html">Самая дорогая монета Беларуси</a>
+                <a href="Html-pages/money_history2.html">Правила оценки монет</a>
+                <a href="Html-pages/money_history3.html">Нумезмат для чайников</a>
+            </div>
+        </section>
+    </main>
+    <footer id = "FQA">
+        <a href="main.html" ><img src="images/KaCoins.svg" alt="KaCoins" class="Logo"></a>
+        <div class="menu_footer">
+            <p>nktdbvnk23@gmail.com</p>
+            <a href=""><img src="images/paper-plane.svg" alt=""></a>
+            <a href=""><img src="images/whatsapp.svg" alt=""></a>
+            <a href=""><img src="images/instagram.svg" alt=""></a>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="JS/script.js">
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
