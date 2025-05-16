@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о монете</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../Css/info_styles3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../main.html" ><img src="../images/KaCoins.svg" alt="KaCoins" class="Logo"></a>
+        <div class="menu">
+            <a href="money_catalog.html">Каталог монет</a>
+            <a href="../main.html#states">Статьи</a>
+            <a href="#FQA">О нас</a>
+        </div>
+        
+        <!-- Бургер-меню -->
+        <div class="burger-menu">
+            <div class="burger-icon"></div>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+            <a href="money_catalog.html">Каталог монет</a>
+            <a href="../main.html#states">Статьи</a>
+            <a href="#FQA">О нас</a>
+        </div>
+    </header>
+    <main>
+        <section class="money_info">
+            <div class="img_info"></div>
+            <div class="text_info">
+                <h2>15 рублей Николая ІІ 1897 г</h2>
+                <h2 class="cost_info">Цена 5 000 BYN</h2>
+                <p>Монета 15 рублей 1897 года была выпущена при Николае II и чеканилась на Санкт-Петербургском монетном дворе. Она изготовлена из золота 900 пробы, имеет диаметр 24,6 мм, массу 12,9 г (чистого золота 11,61 г) и тираж 11 900 033 экземпляров. На гурте монеты нанесена надпись: «Чистаго золота 2 золотника 69,36 долей А Г».</p>
+                <input type="button" value="Купить">
+            </div>
+        </section>
+
+    </main>
+    <footer id = "FQA">
+        <a href="../main.html" ><img src="../images/KaCoins.svg" alt="KaCoins" class="Logo"></a>
+        <div class="menu_footer">
+            <p>pochta@gmail.com</p>
+            <a href=""><img src="../images/paper-plane.svg" alt=""></a>
+            <a href=""><img src="../images/whatsapp.svg" alt=""></a>
+            <a href=""><img src="../images/instagram.svg" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
